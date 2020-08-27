@@ -1,0 +1,6 @@
+-- 创建 payment 表
+CREATE TABLE `payment`  (
+  `id` BIGINT(20) NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `serial` VARCHAR(200) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '支付流水号',
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = INNODB CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '支付表' ROW_FORMAT = DYNAMIC;

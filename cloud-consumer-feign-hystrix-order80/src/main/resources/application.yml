@@ -1,0 +1,20 @@
+server:
+  port: 8000
+
+spring:
+  application:
+    name: cloud-consumer-feign-hystrix-order
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka
+
+# 用于服务降级，在注解 @FeignClient 中添加 fallbackFactory 属性值
+feign:
+  hystrix:
+    enabled: true  #在 Feign 中开启 Hystrix
+
+

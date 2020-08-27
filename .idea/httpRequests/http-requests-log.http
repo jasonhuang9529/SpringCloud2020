@@ -1,0 +1,64 @@
+POST http://localhost:8001/payment/create?serial=AAA
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2020-07-24T102611.200.json
+
+###
+
+POST http://localhost:8001/payment/create
+Accept:*/*
+Cache-Control:no-cache
+
+{"id":"2","serial":"jerry"}
+
+<> 2020-07-24T102057.200.json
+
+###
+
+GET http://localhost:8001/payment/get/1
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2020-07-24T102033.200.json
+
+###
+
+GET http://localhost:8001/payment/get/1
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2020-07-24T102000.200.json
+
+###
+
+GET /http://localhost:8001/payment/get/1
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+GET /http://localhost:8001/payment/get/1
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+GET http://localhost:8001/get/1
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2020-07-24T101932.404.json
+
+###
+
+POST http://localhost:8001/payment/creat
+Accept:*/*
+Cache-Control:no-cache
+
+{"id":"2","serial":"jerry"}
+
+<> 2020-07-24T101820.404.json
+
+###
+
